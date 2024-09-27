@@ -16,6 +16,9 @@
 		04DF95192CA3B1E900CB3331 /* ImageQATests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DF95182CA3B1E900CB3331 /* ImageQATests.swift */; };
 		04DF95232CA3B1E900CB3331 /* ImageQAUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DF95222CA3B1E900CB3331 /* ImageQAUITests.swift */; };
 		04DF95252CA3B1E900CB3331 /* ImageQAUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DF95242CA3B1E900CB3331 /* ImageQAUITestsLaunchTests.swift */; };
+		04F9E4BD2CA4F37D00DA688E /* BaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F9E4BC2CA4F37D00DA688E /* BaseCollectionViewCell.swift */; };
+		04F9E4BF2CA501D800DA688E /* Property List.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04F9E4BE2CA501D800DA688E /* Property List.plist */; };
+		C8E52F8684CA7CB6DF4B346F /* Pods_ImageQA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06824D39FCEB21619ED671B2 /* Pods_ImageQA.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,11 @@
 		04DF951E2CA3B1E900CB3331 /* ImageQAUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImageQAUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04DF95222CA3B1E900CB3331 /* ImageQAUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageQAUITests.swift; sourceTree = "<group>"; };
 		04DF95242CA3B1E900CB3331 /* ImageQAUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageQAUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		04F9E4BC2CA4F37D00DA688E /* BaseCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewCell.swift; sourceTree = "<group>"; };
+		04F9E4BE2CA501D800DA688E /* Property List.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Property List.plist"; sourceTree = "<group>"; };
+		06824D39FCEB21619ED671B2 /* Pods_ImageQA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ImageQA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0780B017454217A9B1305D2B /* Pods-ImageQA.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImageQA.debug.xcconfig"; path = "Target Support Files/Pods-ImageQA/Pods-ImageQA.debug.xcconfig"; sourceTree = "<group>"; };
+		E0EADC9A98B6A145A097A79F /* Pods-ImageQA.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImageQA.release.xcconfig"; path = "Target Support Files/Pods-ImageQA/Pods-ImageQA.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8E52F8684CA7CB6DF4B346F /* Pods_ImageQA.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +92,8 @@
 				04DF95172CA3B1E900CB3331 /* ImageQATests */,
 				04DF95212CA3B1E900CB3331 /* ImageQAUITests */,
 				04DF94FF2CA3B1E500CB3331 /* Products */,
+				EFDA321D5F1C4A15F196B4C1 /* Pods */,
+				8337F027FE3FCBDC67FDF35E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,11 +112,13 @@
 			children = (
 				04DF95012CA3B1E500CB3331 /* AppDelegate.swift */,
 				04DF95032CA3B1E500CB3331 /* SceneDelegate.swift */,
+				04F9E4BC2CA4F37D00DA688E /* BaseCollectionViewCell.swift */,
 				04DF95052CA3B1E500CB3331 /* ViewController.swift */,
 				04DF95072CA3B1E500CB3331 /* Main.storyboard */,
 				04DF950A2CA3B1E800CB3331 /* Assets.xcassets */,
 				04DF950C2CA3B1E800CB3331 /* LaunchScreen.storyboard */,
 				04DF950F2CA3B1E800CB3331 /* Info.plist */,
+				04F9E4BE2CA501D800DA688E /* Property List.plist */,
 			);
 			path = ImageQA;
 			sourceTree = "<group>";
@@ -127,6 +140,23 @@
 			path = ImageQAUITests;
 			sourceTree = "<group>";
 		};
+		8337F027FE3FCBDC67FDF35E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				06824D39FCEB21619ED671B2 /* Pods_ImageQA.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EFDA321D5F1C4A15F196B4C1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0780B017454217A9B1305D2B /* Pods-ImageQA.debug.xcconfig */,
+				E0EADC9A98B6A145A097A79F /* Pods-ImageQA.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,9 +164,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 04DF95282CA3B1E900CB3331 /* Build configuration list for PBXNativeTarget "ImageQA" */;
 			buildPhases = (
+				C1DBE12EA3D8023795D5E5FE /* [CP] Check Pods Manifest.lock */,
 				04DF94FA2CA3B1E500CB3331 /* Sources */,
 				04DF94FB2CA3B1E500CB3331 /* Frameworks */,
 				04DF94FC2CA3B1E500CB3331 /* Resources */,
+				D57EBC0C7339073536C9DD86 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -233,6 +265,7 @@
 			files = (
 				04DF950B2CA3B1E800CB3331 /* Assets.xcassets in Resources */,
 				04DF950E2CA3B1E800CB3331 /* Base in Resources */,
+				04F9E4BF2CA501D800DA688E /* Property List.plist in Resources */,
 				04DF95092CA3B1E500CB3331 /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -253,11 +286,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		C1DBE12EA3D8023795D5E5FE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ImageQA-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D57EBC0C7339073536C9DD86 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ImageQA/Pods-ImageQA-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ImageQA/Pods-ImageQA-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ImageQA/Pods-ImageQA-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		04DF94FA2CA3B1E500CB3331 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04F9E4BD2CA4F37D00DA688E /* BaseCollectionViewCell.swift in Sources */,
 				04DF95062CA3B1E500CB3331 /* ViewController.swift in Sources */,
 				04DF95022CA3B1E500CB3331 /* AppDelegate.swift in Sources */,
 				04DF95042CA3B1E500CB3331 /* SceneDelegate.swift in Sources */,
@@ -437,11 +513,14 @@
 		};
 		04DF95292CA3B1E900CB3331 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0780B017454217A9B1305D2B /* Pods-ImageQA.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5QD7BDRGYR;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ImageQA/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -464,11 +543,14 @@
 		};
 		04DF952A2CA3B1E900CB3331 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0EADC9A98B6A145A097A79F /* Pods-ImageQA.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5QD7BDRGYR;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ImageQA/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
